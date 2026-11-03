@@ -41,6 +41,15 @@
   },
   "keywords": [
     "react-native",
+    "expo",
+    "otp",
+    "one-time-code",
+    "verification-code",
+    "pin",
+    "pin-pad",
+    "passcode",
+    "input",
+    "reanimated",
     "ios",
     "android"
   ],
@@ -65,6 +74,7 @@
     "@react-native/babel-preset": "0.88.1",
     "@react-native/eslint-config": "0.88.1",
     "@react-native/jest-preset": "0.88.1",
+    "@testing-library/react-native": "^13.3.3",
     "@types/react": "^19.2.0",
     "del-cli": "^8.0.1",
     "eslint": "^9.39.5",
@@ -76,12 +86,18 @@
     "react": "19.3.0",
     "react-native": "0.88.1",
     "react-native-builder-bob": "^0.44.1",
+    "react-native-reanimated": "4.7.1",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-worklets": "0.13.0",
+    "react-test-renderer": "19.3.0",
     "turbo": "^2.11.10",
     "typescript": "^6.0.3"
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-reanimated": ">=4.0.0",
+    "react-native-worklets": "*"
   },
   "workspaces": [
     "example"
@@ -124,6 +140,13 @@
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
+    ],
+    "setupFiles": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "resolver": "react-native-reanimated/jest/resolver",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?|react-native-reanimated|react-native-worklets|react-native-safe-area-context)/)"
     ]
   },
   "create-react-native-library": {
