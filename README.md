@@ -2,7 +2,11 @@
 
 One-time code and PIN inputs for React Native. `CodeInput` renders animated cells for an OTP or passcode: digits pop in, the row shakes and turns red on a wrong code, SMS autofill works on iOS and Android, and a masked mode shows dots for PINs. `PinPad` is a lock-screen keypad with a dot indicator, an async check, and a biometric key. Animations run with Reanimated.
 
-https://github.com/user-attachments/assets/REPLACE-WITH-UPLOADED-DEMO
+
+
+https://github.com/user-attachments/assets/aa0f423d-6991-4ef3-be63-567ca21fa531
+
+
 
 _Demo recorded on the iOS Simulator from the example app: [docs/demo.mp4](docs/demo.mp4)._
 
